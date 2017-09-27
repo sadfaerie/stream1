@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>Box Model2</title>
+  <style type="text/css">
+  #container{
+    font-size: 0;
+    width: 960px;
+    /*background-color: brown;*/
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    padding: 10px 15px;
+  }
+  .box{
+    font-size: 16pt;
+    font-family: Verdana;
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    background-color: #81BBC9;
+    margin: 10px 20px 10px 0;
+    /*display: inline-block;*/
+    border-radius: 10px;
+  }
+  #sidebar{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 16pt;
+    font-family: Verdana;
+    text-align: center;
+    width: 300px;
+    height: 320px;
+    background-color: #81BBC9;
+    margin-left: 0;
+    margin-right: 5px;
+    border-radius: 10px;
+    padding: 20px 40px 0 40px;
+  }
+  #content {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    display: inline-block;
+    font-size: 16pt;
+    font-family: Verdana;
+    text-align: center;
+    width: 650px;
+    height: 320px;
+    background-color: #81BBC9;
+    margin-left: 5px;
+    margin-right: 0;
+    border: solid black 1px;
+    border-radius: 10px;
+    vertical-align: top;
+    padding: 20px 40px 0 40px;
+  }
+p{
+  font-size: 10pt;
+}
+  </style>
+</head>
+<body>
+  <div id="container">
+  <div class="box">Header</div>
+  <div id="sidebar">Sidebar<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+  <div id="content">My Important Content<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+  <div class="box">Footer</div>
+  </div>
+</body>
+</html>

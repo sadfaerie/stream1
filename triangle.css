@@ -1,0 +1,13 @@
+#playTriangle2 {
+    width: 0px;
+    height: 0px;
+    border-bottom: 42px solid transparent;
+    border-top: 42px solid transparent;
+    border-left: 42px solid green;
+    font-size: 0px;
+    line-height: 0px;
+    position: absolute;
+    top: 54px;
+    left: 87px;
+    z-index: 2;
+}

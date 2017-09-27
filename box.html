@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Box Model</title>
+        <style type="text/css">
+          .box{
+          width:300px;
+          height: 300px;
+          background-color:#81BBC9;
+          margin: 50px;
+          border: 10px dashed #000;
+          }
+          .cent {
+          margin: auto;
+          }
+          #radiusTest1 {
+          width: 200px;
+	        height: 200px;
+	        background-color: #247F7F;
+	        border-style:double;
+          border-radius: 15%;  /*set radius for all corners*/
+        	border-width: 30px;
+        	border-color: #ffffff;
+          }
+          #radiusTest2 {
+          width: 200px;
+        	height: 200px;
+        	background-color: #247F7F;
+         	border-style:double;
+          border-top-right-radius: 15%;   /*set the top right corner radius*/
+        	border-bottom-left-radius: 15%; /*set the bottom left corner radius */
+        	border-width: 30px;
+        	border-color: #ffffff;
+          }
+          #radiusTest3 {
+          width: 200px;
+          height: 200px;
+          background-color: #247F7F;
+          border-radius: 15%;
+          border-style: double;
+          border-top-style: none; /* remove top border */
+          border-bottom-style: none; /*remove bottom border */
+          border-width: 30px;
+          border-color: #ffffff;
+          }
+          #radiusTest4 {
+          width: 200px;
+        	height: 200px;
+        	background-color: #247F7F;
+        	border-style:double;
+          border-radius: 50%; /* create a circle */
+        	border-width: 30px;
+        	border-color: #ffffff;
+          }
+          #radiusTest5 {
+          width: 200px;
+        	height: 200px;
+        	background-color: #247F7F;
+        	border-style:double;
+          border-radius: 120px/30px; /* create an elipse*/
+        	border-width: 30px;
+        	border-color: #ffffff;
+          }
+          #example1 {
+          width: 200px;
+          height: 200px;
+          margin: 15px;
+          background-color: #247F7F;
+          border-style: dashed;
+          border-width: 10px;
+          border-color: black;
+          }
+          #example2 {
+          width: 200px;
+          height: 200px;
+          margin: 15px;
+          background-color: #247F7F;
+          border-radius: 50%;
+          border-style: dashed;
+          border-width: 10px;
+          border-color: black;
+          }
+          #example3 {
+          width: 200px;
+          height: 200px;
+          margin: 15px;
+          background-color: #247F7F;
+          border-style: solid;
+          border-width: 10px;
+          border-color: black;
+          }
+          #example4 {
+          width: 200px;
+          height: 200px;
+          margin: 15px;
+          background-color: #247F7F;
+          border-style: dashed;
+          border-width: 35px;
+          border-color: black;
+          }
+          #example5 {
+          width: 200px;
+          height: 200px;
+          margin: 15px;
+          background-color: #247F7F;
+          border-style: dashed;
+          border-radius: 12%;
+          border-width: 35px;
+          border-color: black;
+          }
+          #example6 {
+          width: 200px;
+          height: 200px;
+          margin: 15px;
+          background-color: white;
+          border-style: solid;
+          border-radius: 50%;
+          border-width: 35px;
+          border-color: red;
+          }
+          #example7 {
+          width: 200px;
+          height: 200px;
+          margin: 15px;
+          background-color: yellow;
+          border-style: solid;
+          border-color: orange;
+          border-top-left-radius: 10%;
+          border-top-right-radius: 70%;
+          border-bottom-right-radius: 15%;
+          border-bottom-left-radius: 70%;
+          }
+
+        </style>
+    </head>
+    <body>
+        <div class="box cent"></div>
+      <div style="display: inline-flex">
+        <div id="radiusTest1"></div>
+        <div id="radiusTest2"></div>
+        <div id="radiusTest3"></div>
+        <div id="radiusTest4"></div>
+        <div id="radiusTest5"></div>
+      </div>
+      <div style="display: inline-flex">
+        <div id="example1"></div>
+        <div id="example2"></div>
+        <div id="example3"></div>
+        <div id="example4"></div>
+        <div id="example5"></div>
+      </div>
+      <div style="display: inline-flex">
+        <div id="example6"></div>
+        <div id="example7"></div>
+        <div id="example8"></div>
+      </div>
+    </body>
+</html>
